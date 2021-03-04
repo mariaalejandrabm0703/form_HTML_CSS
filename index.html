@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>form</title>
+    <title>index</title>
   </head>
   <body>
     <form action="ejemplo.php" method="get">
@@ -64,8 +64,13 @@
       </p>
       <p>Usuario: <input type="text" name="usuario" maxlength="6" /></p>
       <p>Contraseña: <input type="password" name="password" minlength="6" /></p><br/>
-      <input type="file" name="archivo" value="image/*"><br/>
-      <p>Text area:</p><textarea name="texto" rows="4" cols="20" placeholder="Escriba algo"></textarea>
+      <p>Archivo:</p><input type="file" name="archivo" value="image/*"><br/>
+      <p>Text area:</p><textarea name="texto" rows="4" cols="20" placeholder="Escriba algo"></textarea><br/>
+      <p>Menú:</p><select name="menu">
+        <option value="1">Uno</option>
+        <option value="2">Dos</option>
+        <option value="3" selected>Tres</option>
+      </select>
     </form>
   </body>
 </html>
